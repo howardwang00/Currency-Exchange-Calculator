@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CurrencyExchangeCalculator" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dZZ-Ad-fkZ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="55"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Currency Exchange Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x7e-nD-uXl">
+                                        <rect key="frame" x="71.5" y="17.5" width="231.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.017064022818798041" green="1" blue="0.43459814303523792" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="x7e-nD-uXl" firstAttribute="centerY" secondItem="dZZ-Ad-fkZ" secondAttribute="centerY" id="8mH-VM-fLl"/>
+                                    <constraint firstAttribute="height" constant="55" id="N5C-eU-3tl"/>
+                                    <constraint firstItem="x7e-nD-uXl" firstAttribute="centerX" secondItem="dZZ-Ad-fkZ" secondAttribute="centerX" id="aMQ-0e-FBg"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qp5-z3-xWh" userLabel="Super Stack View">
+                                <rect key="frame" x="67.5" y="105" width="240.5" height="110"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="U0d-7s-gQf" userLabel="Dollar Stack View">
+                                        <rect key="frame" x="0.0" y="0.0" width="240.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="US Dollar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="818-fJ-2Ij">
+                                                <rect key="frame" x="0.0" y="0.0" width="105.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VCC-KJ-PyF" userLabel="Dollar Text Field">
+                                                <rect key="frame" x="155.5" y="0.0" width="85" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="Rnt-Ba-NzQ"/>
+                                                    <constraint firstAttribute="width" constant="85" id="VnI-PG-16f"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="OYS-qk-Mne" userLabel="Peso Stack View">
+                                        <rect key="frame" x="0.0" y="40" width="240.5" height="30"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Mexican Peso" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C2A-jp-uhN">
+                                                <rect key="frame" x="0.0" y="0.0" width="105.5" height="30"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <textField opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tO8-mg-Dxp" userLabel="Peso Text Field">
+                                                <rect key="frame" x="155.5" y="0.0" width="85" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="8tQ-Cj-NA5"/>
+                                                    <constraint firstAttribute="width" constant="85" id="9mU-vK-g0Y"/>
+                                                </constraints>
+                                                <nil key="textColor"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <textInputTraits key="textInputTraits"/>
+                                            </textField>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AAF-cc-i3H">
+                                        <rect key="frame" x="0.0" y="80" width="240.5" height="30"/>
+                                        <state key="normal" title="Convert"/>
+                                        <connections>
+                                            <action selector="convertCurrency:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PYx-8E-rIc"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="AAF-cc-i3H" firstAttribute="width" secondItem="qp5-z3-xWh" secondAttribute="width" id="Arc-YQ-Q2P"/>
+                                    <constraint firstItem="OYS-qk-Mne" firstAttribute="width" secondItem="qp5-z3-xWh" secondAttribute="width" id="J87-zW-0Vh"/>
+                                    <constraint firstItem="U0d-7s-gQf" firstAttribute="width" secondItem="qp5-z3-xWh" secondAttribute="width" id="L66-Ox-0GG"/>
+                                </constraints>
+                            </stackView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="business-money-pink-coins" translatesAutoresizingMaskIntoConstraints="NO" id="bbC-iE-OHn">
+                                <rect key="frame" x="67.5" y="315" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="7PZ-Je-KzV"/>
+                                    <constraint firstAttribute="width" constant="240" id="cSd-e4-uCG"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="dZZ-Ad-fkZ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="C8L-Rj-Uc5"/>
+                            <constraint firstItem="qp5-z3-xWh" firstAttribute="top" secondItem="dZZ-Ad-fkZ" secondAttribute="bottom" constant="50" id="NYK-Dx-ITm"/>
+                            <constraint firstItem="dZZ-Ad-fkZ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OuO-Cd-IDV"/>
+                            <constraint firstItem="bbC-iE-OHn" firstAttribute="top" secondItem="qp5-z3-xWh" secondAttribute="bottom" constant="100" id="WaT-n1-o1h"/>
+                            <constraint firstItem="qp5-z3-xWh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XR4-mi-Yh9"/>
+                            <constraint firstAttribute="trailing" secondItem="dZZ-Ad-fkZ" secondAttribute="trailing" id="sk4-QP-iYb"/>
+                            <constraint firstItem="bbC-iE-OHn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vgk-3P-H1o"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mexicanPesoTextField" destination="tO8-mg-Dxp" id="KIK-XS-YpK"/>
+                        <outlet property="usDollarTextField" destination="VCC-KJ-PyF" id="TYp-pR-Sul"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="business-money-pink-coins" width="4634" height="3031"/>
+    </resources>
+</document>
